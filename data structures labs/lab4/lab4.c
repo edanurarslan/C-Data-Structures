@@ -34,26 +34,6 @@ int isEmpty(Stack* stack) {
     return stack->top == NULL;
 }
 
-double addition(double num1, double num2) {
-    return num1 + num2;
-}
-
-double subtraction(double num1, double num2) {
-    return num1 - num2;
-}
-
-double multiplication(double num1, double num2) {
-    return num1 * num2;
-}
-
-double division(double num1, double num2) {
-    if (num2 != 0) {
-        return num1 / num2;
-    } else {
-        printf("divison by zero\n");
-        return 0.0;
-    }
-}
 
 void checkHtmlValidity(const char* htmlCode) {
     Stack stack;
