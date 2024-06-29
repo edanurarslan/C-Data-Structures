@@ -73,38 +73,6 @@ struct intersectedNode* findCommonElements(struct node* list1, struct node* list
     return result;
 }
 
-double addition(double num1, double num2) {
-    return num1 + num2;
-}
-
-double subtraction(double num1, double num2) {
-    return num1 - num2;
-}
-
-double multiplication(double num1, double num2) {
-    return num1 * num2;
-}
-
-double division(double num1, double num2) {
-    if (num2 != 0) {
-        return num1 / num2;
-    } else {
-        printf("divison by zero\n");
-        return 0.0;
-    }
-}
-
-int faktoriyel(int n) {
-    if (n == 0 || n == 1) {
-        return 1;
-    }
-    return n * faktoriyel(n - 1);
-}
-
-double kare(double x) {
-    return x * x;
-}
-
 int main() {
     struct node* list1 = NULL;
     struct node* list2 = NULL;
@@ -152,30 +120,6 @@ int main() {
         result = result->next;
         free(temp);
     }
-
-    char operator;
-    double sayi1, sayi2;
-
-
-
-    switch (operator) {
-        case '+':
-            printf("%.2lf + %.2lf = %.2lf\n", sayi1, sayi2, sayi1 + sayi2);
-            break;
-        case '-':
-            printf("%.2lf - %.2lf = %.2lf\n", sayi1, sayi2, sayi1 - sayi2);
-            break;
-        case '*':
-            printf("%.2lf * %.2lf = %.2lf\n", sayi1, sayi2, sayi1 * sayi2);
-            break;
-        case '/':
-            if (sayi2 != 0) {
-                printf("%.2lf / %.2lf = %.2lf\n", sayi1, sayi2, sayi1 / sayi2);
-            } else {
-                printf("divison by zero\n");
-            }
-            break;
-
 
     return 0;
 }
